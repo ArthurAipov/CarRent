@@ -45,17 +45,17 @@ namespace CarRent
             //    GlobalSettings.DB.Car.Add(newCar);
             //}
             //GlobalSettings.DB.SaveChanges();
-            var files = Directory.GetFiles(@"C:\Users\aipov\OneDrive\Изображения\Cars");
-            foreach (var car in GlobalSettings.DB.Car)
-            {
-                var file = files.FirstOrDefault(f => f.Contains(car.ModelId.ToString()));
-                if (file != null)
-                {
-                    var bytes = File.ReadAllBytes(file);
-                    car.Photo = bytes;
-                }
-            }
-            GlobalSettings.DB.SaveChanges();
+            //var files = Directory.GetFiles(@"C:\Users\aipov\OneDrive\Изображения\Cars");
+            //foreach (var car in GlobalSettings.DB.Car)
+            //{
+            //    var file = files.FirstOrDefault(f => f.Contains(car.ModelId.ToString()));
+            //    if (file != null)
+            //    {
+            //        var bytes = File.ReadAllBytes(file);
+            //        car.Photo = bytes;
+            //    }
+            //}
+            //GlobalSettings.DB.SaveChanges();
             MainFrame.NavigationService.Navigate(new AutorizationPage());
 
         }
