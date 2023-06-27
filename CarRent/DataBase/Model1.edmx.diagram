@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bfff9f895c244cefb64adc17392a12de" Name="Diagram1" ZoomLevel="108">
+        <EntityTypeShape EntityType="CarRentModel.Brend" Width="1.5" PointX="0.75" PointY="1.75" />
+        <EntityTypeShape EntityType="CarRentModel.Car" Width="1.5" PointX="5.25" PointY="1.375" />
+        <EntityTypeShape EntityType="CarRentModel.City" Width="1.5" PointX="3" PointY="13.125" />
+        <EntityTypeShape EntityType="CarRentModel.Client" Width="1.5" PointX="5.25" PointY="11.125" />
+        <EntityTypeShape EntityType="CarRentModel.Model" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="CarRentModel.ModelType" Width="1.5" PointX="0.75" PointY="4.875" />
+        <EntityTypeShape EntityType="CarRentModel.Pass" Width="1.5" PointX="7.5" PointY="1" />
+        <EntityTypeShape EntityType="CarRentModel.PassStatus" Width="1.5" PointX="5.25" PointY="4.875" />
+        <EntityTypeShape EntityType="CarRentModel.Role" Width="1.5" PointX="0.75" PointY="10.5" />
+        <EntityTypeShape EntityType="CarRentModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="5.75" />
+        <EntityTypeShape EntityType="CarRentModel.TransmissionBox" Width="1.5" PointX="0.75" PointY="7.25" />
+        <EntityTypeShape EntityType="CarRentModel.User" Width="1.5" PointX="3" PointY="10.25" />
+        <AssociationConnector Association="CarRentModel.FK_Model_Brend" />
+        <AssociationConnector Association="CarRentModel.FK_Car_Model" />
+        <AssociationConnector Association="CarRentModel.FK_Pass_Car" />
+        <AssociationConnector Association="CarRentModel.FK_Client_City" />
+        <AssociationConnector Association="CarRentModel.FK_Client_User" />
+        <AssociationConnector Association="CarRentModel.FK_Pass_Client" />
+        <AssociationConnector Association="CarRentModel.FK_Model_ModelType" />
+        <AssociationConnector Association="CarRentModel.FK_Model_TransmissionBox" />
+        <AssociationConnector Association="CarRentModel.FK_Pass_PassStatus" />
+        <AssociationConnector Association="CarRentModel.FK_User_Role" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

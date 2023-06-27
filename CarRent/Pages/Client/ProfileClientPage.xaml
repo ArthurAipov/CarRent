@@ -1,0 +1,39 @@
+﻿<Page x:Class="CarRent.Pages.Client.ProfileClientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:CarRent.Pages.Client"
+      mc:Ignorable="d"
+      d:DesignHeight="450"
+      d:DesignWidth="800"
+      Title="ProfileClientPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Width="250">
+            <TextBlock Text="Full name" />
+            <TextBox Name="TextBoxName"
+                     Text="{Binding FullName}" />
+            <TextBlock Text="Phone" />
+            <TextBox Name="TextBoxPhone"
+                     Text="{Binding Phone}"
+                     MaxLength="13" />
+            <TextBlock Text="Passport data" />
+            <TextBox Name="TextBoxPassportData"
+                     Text="{Binding PassportData}"
+                     MaxLength="10" />
+            <TextBlock Text="City" />
+            <ComboBox SelectedItem="{Binding City}"
+                      DisplayMemberPath="Name"
+                      Name="ComboBoxCity" />
+            <Button Name="ButtonSave"
+                    Content="Save"
+                    Click="ButtonSave_Click" />
+            <Button Content="Back"
+                    Name="ButtonBack"
+                    Click="ButtonBack_Click" />
+        </StackPanel>
+    </Grid>
+</Page>
