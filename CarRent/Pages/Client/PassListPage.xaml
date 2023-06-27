@@ -16,7 +16,7 @@
                   ColumnWidth="*">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Car"
-                                    Binding="{Binding Car}" />
+                                    Binding="{Binding Car.CarModelName}" />
                 <DataGridTextColumn Header="DateStart"
                                     Binding="{Binding DateStart}" />
                 <DataGridTextColumn Header="DateUntil"

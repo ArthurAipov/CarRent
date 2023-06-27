@@ -40,7 +40,7 @@
                                     <DataGridTextColumn Header="Date until"
                                                         Binding="{Binding DateUntil}" />
                                     <DataGridTextColumn Header="Car"
-                                                        Binding="{Binding CarModelName}" />
+                                                        Binding="{Binding Car.CarModelName}" />
                                 </DataGrid.Columns>
                             </DataGrid>
                         </DataTemplate>

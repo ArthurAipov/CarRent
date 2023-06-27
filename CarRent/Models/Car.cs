@@ -20,9 +20,13 @@ namespace CarRent.DataBase
         {
             get
             {
-                return Model.Name;
+                var carModelName = Model.Name;
+                return carModelName;
             }
         }
+
+
+
 
     }
 }
